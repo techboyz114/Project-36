@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <p id="i1"></p>
+    <p id="i2"></p>
+    <script>
+        var ar = [8, 1, 7, 3, 5, 2, 0, 6];
+        function f1(num) {
+            return num * 5;
+        }
+        var newar = ar.map(f1);
+        document.getElementById("i1").innerHTML = "Original Array : " + ar;
+        document.getElementById("i2").innerHTML = "Mapped Array : " + newar.sort(function (a, b) { return a - b }) + "<br>" +
+            newar.sort(function (a, b) { return b - a });
+    </script>
+</body>
+
+</html>
